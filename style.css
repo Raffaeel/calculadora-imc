@@ -1,0 +1,70 @@
+
+/* Estilos gerais */
+body {
+    background-color: rgb(7, 14, 12);
+    color: rgb(234, 242, 9);
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 100px;
+    left: 650px;
+    margin-right: 100%;
+    border: 2px solid yellow; /* Adicionando borda ao body */
+}
+
+/* Estilo da classe .result */
+.result {
+    background-color: rgb(238, 223, 11);
+    color: rgb(1, 10, 10);
+    padding: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo da classe .container com borda */
+.container {
+    border: 2px solid yellow; /* Mantendo a borda */
+    padding: 20px;
+    border-radius: 10px; /* Arredondando as bordas */
+    width: 175px; /* Definindo uma largura fixa */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+/* Media Query para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        left: 50%; /* Ajustando a posição para celular */
+        transform: translateX(-50%); /* Centralizando no celular */
+        top: 50px; /* Ajustando a posição para celular */
+        border: 2px solid yellow; /* Garantindo que a borda permaneça no body */
+    }
+    
+    .container {
+        width: 90%; /* Tornando o container mais largo em telas pequenas */
+        padding: 10px; /* Menos padding para otimizar o espaço */
+        border: 2px solid yellow; /* Garantindo a borda no container também */
+    }
+
+    .result {
+        padding: 30px; /* Ajustando o padding para telas pequenas */
+    }
+}
+
+/* Media Query para tablets */
+@media (max-width: 1024px) {
+    body {
+        left: 50%; /* Ajustando a posição para tablet */
+        transform: translateX(-50%); /* Centralizando no tablet */
+        top: 80px; /* Ajustando a posição para tablet */
+        border: 2px solid yellow; /* Garantindo que a borda permaneça no body */
+    }
+
+    .container {
+        width: 50%; /* Ajustando a largura para tablets */
+        border: 2px solid yellow; /* Garantindo a borda no container também */
+    }
+
+    .result {
+        padding: 40px; /* Ajustando o padding para tablets */
+    }
+}
